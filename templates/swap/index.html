@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form action="" method="post">
+{% csrf_token  %}
+
+<input type="text" name="txtnum1" placeholder="Enter first number" value="{{key1}}" />
+<br>
+<br>
+<input type="text" name="txtnum2" placeholder="Enter second number" value="{{key2}}" />
+
+<br><br>
+
+<input type="submit" name="btnsubmit" value="SWAP">
+</form>
+
+{{key1}}, {{key2}}
+</body>
+</html>
